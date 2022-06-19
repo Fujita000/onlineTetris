@@ -1,0 +1,64 @@
+#hold_flame {
+  background-color: azure;
+  float: left;
+  border: solid;
+  border-right: 0;
+}
+
+#stage {
+  background-color: aliceblue;
+  float: left;
+  border: solid;
+
+}
+
+.next {
+  background-color: azure;
+  float: left;
+  border: solid;
+  border-left: 0;
+}
+
+#next_2 {
+  border-top: 0;
+}
+
+#next_flame {
+  float: left;
+  height: 100px;
+  width: 100px;
+  background-color: #000;
+}
+
+#enemy_hold_flame {
+  background-color: azure;
+  float: left;
+  border: solid;
+  border-right: 0;
+  margin-left: 100px;
+}
+
+#enemy_next_2 {
+  border-top: 0;
+}
+
+#enemy_next_flame {
+  float: left;
+  height: 100px;
+  width: 100px;
+  background-color: #000;
+}
+
+#enemy_stage {
+  background-color: aliceblue;
+  float: left;
+  border: solid;
+}
+
+#gage {
+  margin: 20px;
+  width: 50px;
+  height: 270px;
+  background-color: aliceblue;
+  border: solid;
+}

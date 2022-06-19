@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+<form id="radio">
+	<input name="rbtn" type="radio" value="1"> ルーム１
+	<input name="rbtn" type="radio" value="2"> ルーム２
+	<input name="rbtn" type="radio" value="3"> ルーム３
+</form>
+  <button onclick="start()">送信</button>
+  <button onclick="one_play_start()">一人</button>
+  <!-- <button onclick="cpu_start()">CPU</button> -->
+  <p id="gamesta"></p>
+  <div id="hold_flame">
+    <canvas id="hold" width="100" height="100"></canvas>
+  </div>
+  <canvas id="stage" width="250px" height="500"></canvas>
+  <div id="next_flame">
+    <canvas class="next" id="next_1" width="100" height="100"></canvas>
+    <canvas class="next" id="next_2" width="80" height="80"></canvas>
+  </div>
+  
+  
+  <div id="enemy_hold_flame">
+    <canvas id="enemy_hold" width="100" height="100"></canvas>
+  </div>
+  <canvas id="enemy_stage" width="250px" height="500"></canvas>
+  <div id="enemy_next_flame">
+    <canvas class="next" id="enemy_next_1" width="100" height="100"></canvas>
+    <canvas class="next" id="enemy_next_2" width="80" height="80"></canvas>
+  </div>
+  
+  <script type="text/javascript" src="tetris_blocks.js"></script>
+  <script type="text/javascript" src="tetris_draw.js"></script>
+  <script type="text/javascript" src="cpu.js"></script>
+  <script type="text/javascript" src="tetris_js.js"></script>
+</body>
+
+</html>
